@@ -2670,6 +2670,7 @@
     "net8.0": [
       "Microsoft.EntityFrameworkCore >= 9.0.0-preview.3.24172.4",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0-preview.3.24172.4",
+      "Microsoft.EntityFrameworkCore.Relational >= 9.0.0-preview.3.24172.4",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0-preview.3.24172.4",
       "Pomelo.EntityFrameworkCore.MySql >= 9.0.0-preview.1"
     ]
@@ -2723,6 +2724,10 @@
             "target": "Package",
             "version": "[9.0.0-preview.3.24172.4, )"
           },
+          "Microsoft.EntityFrameworkCore.Relational": {
+            "target": "Package",
+            "version": "[9.0.0-preview.3.24172.4, )"
+          },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -2759,9 +2764,10 @@
   },
   "logs": [
     {
-      "code": "NU1107",
-      "level": "Error",
-      "message": "Conflito de versão detectado para Microsoft.EntityFrameworkCore.Relational. Instale/referencie Microsoft.EntityFrameworkCore.Relational 9.0.0-preview.3.24172.4 diretamente no projeto minimal-api para resolver esse problema. \r\n minimal-api -> Microsoft.EntityFrameworkCore.Design 9.0.0-preview.3.24172.4 -> Microsoft.EntityFrameworkCore.Relational (>= 9.0.0-preview.3.24172.4) \r\n minimal-api -> Pomelo.EntityFrameworkCore.MySql 9.0.0-preview.1 -> Microsoft.EntityFrameworkCore.Relational (>= 9.0.0-preview.1.24081.2 && <= 9.0.0-preview.1.999999).",
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Versão detectada do pacote fora da restrição de dependência: Pomelo.EntityFrameworkCore.MySql 9.0.0-preview.1 requer Microsoft.EntityFrameworkCore.Relational (>= 9.0.0-preview.1.24081.2 && <= 9.0.0-preview.1.999999), mas a versão Microsoft.EntityFrameworkCore.Relational 9.0.0-preview.3.24172.4 foi resolvida.",
       "libraryId": "Microsoft.EntityFrameworkCore.Relational",
       "targetGraphs": [
         "net8.0"

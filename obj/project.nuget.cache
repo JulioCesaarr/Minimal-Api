@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "xvBWQTi5dTHpxJDrOtUcTrp/q7Lpm1rt9WE43wFlz5VdwuyHyfgHvfCd/meKHwMJu4wlYbay/P4vGp0uCvGwBg==",
-  "success": false,
+  "dgSpecHash": "0EDSIMSWGrGa+Lf7XC7Qc7nGUFcE046YFxodgrmQ6xZa+jC83NsO6WUbcSAPGkG1ujwFYChwTLTrlXCJm5jaJQ==",
+  "success": true,
   "projectFilePath": "C:\\Users\\USER\\projetos\\minimalApi\\minimal-api\\minimal-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -47,9 +47,10 @@
   ],
   "logs": [
     {
-      "code": "NU1107",
-      "level": "Error",
-      "message": "Conflito de versão detectado para Microsoft.EntityFrameworkCore.Relational. Instale/referencie Microsoft.EntityFrameworkCore.Relational 9.0.0-preview.3.24172.4 diretamente no projeto minimal-api para resolver esse problema. \r\n minimal-api -> Microsoft.EntityFrameworkCore.Design 9.0.0-preview.3.24172.4 -> Microsoft.EntityFrameworkCore.Relational (>= 9.0.0-preview.3.24172.4) \r\n minimal-api -> Pomelo.EntityFrameworkCore.MySql 9.0.0-preview.1 -> Microsoft.EntityFrameworkCore.Relational (>= 9.0.0-preview.1.24081.2 && <= 9.0.0-preview.1.999999).",
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Versão detectada do pacote fora da restrição de dependência: Pomelo.EntityFrameworkCore.MySql 9.0.0-preview.1 requer Microsoft.EntityFrameworkCore.Relational (>= 9.0.0-preview.1.24081.2 && <= 9.0.0-preview.1.999999), mas a versão Microsoft.EntityFrameworkCore.Relational 9.0.0-preview.3.24172.4 foi resolvida.",
       "libraryId": "Microsoft.EntityFrameworkCore.Relational",
       "targetGraphs": [
         "net8.0"
